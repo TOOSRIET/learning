@@ -71,4 +71,10 @@ func main() {
 	fmt.Println("Parallel execution time:", parDuration)
 	fmt.Println(parResult)
 	fmt.Println("Performance improvement:", float64(seqDuration)/float64(parDuration), "x")
+
+	// Output:
+	// Sequential execution time: 10.009466042s
+	// [2 4 6 8 10 12 14 16 18 20]
+	// Parallel execution time: 1.0013415s
+	// [8 6 10 12 16 20 4 2 18 14]
 }
